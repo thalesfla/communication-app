@@ -9,7 +9,13 @@ import { EventComponent } from './event/event.component';
 import { ChildItemComponent } from './event/child-item/child-item.component';
 import { MatCardModule,
   MatButtonModule,
-  MatIconModule } from '@angular/material';
+  MatIconModule, 
+  MatFormField,
+  MatInputModule,
+  MatFormFieldModule} from '@angular/material';
+import { ClientsComponent } from './clients/clients.component';
+import { FormsModule } from '@angular/forms';
+import { ItemClientComponent } from './clients/item-client/item-client.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +24,18 @@ import { MatCardModule,
     ClientComponent,
     EventComponent,
     ChildItemComponent,
+    ClientsComponent,
+    ItemClientComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
