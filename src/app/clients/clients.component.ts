@@ -30,6 +30,7 @@ export class ClientsComponent implements OnInit {
   }
 
   deleteClient(i) {
+    // apaga a partir da posição i vai apagar um elemento
     this.clients.splice(i, 1);
   }
 
