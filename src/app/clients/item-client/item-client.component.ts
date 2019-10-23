@@ -10,6 +10,7 @@ export class ItemClientComponent implements OnInit {
 
   @Input() client: Client;
   @Output() updateClient = new EventEmitter<Client>();
+  @Output() removeClient = new EventEmitter<any>();
   onEdit: boolean = false; 
   name: string;
   age: number;
@@ -25,7 +26,8 @@ export class ItemClientComponent implements OnInit {
   }
 
   remove() {
-
+    this.removeClient.emit();
+    
   }
 
   save() {
