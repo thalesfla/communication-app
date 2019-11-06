@@ -35,6 +35,4 @@ export class ParentChildComponent implements OnInit {
     console.log(this.myp);
   }
 
-  
-
 }
